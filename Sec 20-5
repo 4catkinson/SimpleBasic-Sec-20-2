@@ -1,0 +1,43 @@
+'Below is a Small Basic Program that is set to copy file from one folder to a back-up folder only as long as the London branch is closed. My frame of mind was writing this based up local Portland, OR time, which is 8 hours behind London time. The back up was to occur when a button on the screen was clicked. I tried to make this so that the button would only be available during approved London afterhours back-up time.
+
+GraphicsWindow.Title="London Afterhours Back-Up"
+GraphicsWindow.Width=400
+GraphicsWindow.Height=300
+GraphicsWindow.BackgroundColor="Gray"
+GraphicsWindow.PenColor="Red"
+
+
+currently=Clock.Hour
+  If currently>=0 and currently <1 Then
+  
+    BkUpmessage = Controls.AddButton("Afterhours Back-Up",130,130)
+    Controls.ButtonClicked = backUP1
+    EndIf
+
+Sub backUp1  
+  goBUTTON =Controls.LastClickedButton  
+  If goBUTTON = BkUpmessage Then    
+    GraphicsWindow.ShowMessage("Complete", "Afterhours Back-Up")    
+    File.CopyFile("C:\Users\achri\Desktop\SB 20-3 Originals\Small Basic 20-3.txt", "C:\Users\achri\Desktop\SB 20-3 Backups")
+       EndIf
+       EndSub
+  If currently >=1 And currently <= 13 Then
+     GraphicsWindow.Hide()
+       Endif
+            
+  If currently > 13 and currently < 24 Then
+     BkUpmessage = Controls.AddButton("Afterhours Back-Up",130,130)
+     Controls.ButtonClicked = backUP2
+   EndIf
+   
+Sub backUp2  
+  goBUTTON =Controls.LastClickedButton  
+    If goBUTTON = BkUpmessage Then    
+    GraphicsWindow.ShowMessage("Complete", "Afterhours Back-Up")    
+    File.CopyFile("C:\Users\achri\Desktop\SB 20-3 Originals\Small Basic 20-3.txt", "C:\Users\achri\Desktop\SB 20-3 Backups")
+       EndIf
+       EndSub
+
+
+
+       

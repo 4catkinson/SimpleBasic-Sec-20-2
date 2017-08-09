@@ -1,0 +1,8 @@
+TextWindow.Title="After Hours Back-Up"
+backupTime=Clock.Hour
+If backupTime>0 And backupTime<1 Then
+  File.CopyFile("C:\Users\achri\Desktop\SB 20-3 Originals\Small Basic 20-3.txt", "C:\Users\achri\Desktop\SB 20-3 Backups")
+EndIf
+If backupTime>=13 And backupTime<24 Then
+  File.CopyFile("C:\Users\achri\Desktop\SB 20-3 Originals\Small Basic 20-3.txt", "C:\Users\achri\Desktop\SB 20-3 Backups")
+EndIf

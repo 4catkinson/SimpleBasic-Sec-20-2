@@ -1,0 +1,2 @@
+# SmallBasic-Section-20-Exercises
+These bits of code are very rough and my first samples. They are written to complete exercises at the end of Section 20 of The Tech Academy's Overview of Software Development introductory course. The course is designed to cut your teeth on so you can get a better feel for the different pieces that make up simple programs. I am under no illusion at this time that this code is by any means good. It is meant to complete a task. My goal is to improve my skills weekly.

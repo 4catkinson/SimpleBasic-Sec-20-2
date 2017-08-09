@@ -1,0 +1,20 @@
+'This is a Small Basic program that ask the user to enter two numbers and provides feedback on which one is larger.'
+
+
+TextWindow.Title="Larger Number"
+TextWindow.BackgroundColor="Blue"
+TextWindow.ForegroundColor="Yellow"
+TextWindow.Write("Hello. What is your name?: ")
+Name=TextWindow.Read()
+TextWindow.WriteLine("Nice to meet you "+Name+". This is a program that will tell you which of two numbers is larger.")
+TextWindow.WriteLine("Enter your first number: ")
+Number_1=TextWindow.ReadNumber()
+TextWindow.WriteLine("Now enter your second number.: ")
+Number_2=TextWindow.ReadNumber()
+If Number_1 > Number_2 Then
+  TextWindow.WriteLine("The larger number is: " +Number_1)
+ElseIf Number_1 < Number_2 Then
+  TextWindow.WriteLine("The larger number is: " +Number_2)
+ElseIf Number_1 = Number_2 Then
+  TextWindow.WriteLine("Nice try " +Name+"! The numbers you entered are equals.")
+  EndIf

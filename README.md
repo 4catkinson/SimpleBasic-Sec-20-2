@@ -1,5 +1,5 @@
-# SimpleBasic-Sec-20-2
-Below is the code I created in an attempt to meet the parameters of the assignment but I cannot get the program to output individual branch closed messages. Please advise: 
+# SmallBasic-Sec-20-2 
+'Below is the code I created in an attempt to meet the parameters of the assignment but I cannot get the program to output individual branch closed messages. I may come back to work on this. The other branch for Sec 20-2 meet the criteria in a different manner'
 
 TextWindow.Title="Branch Availability"
 TextWindow.WriteLine("Branches have the following availability.: ")
